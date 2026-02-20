@@ -10,11 +10,14 @@
  * and displays structured output via Serial Monitor.
  */
 
- // TODO 1:
- // Define LDR analog pin (Use A0)
+// TODO 1: Define LDR analog pin (Use A0)
+const int LDR_PIN = A0;
 
- // TODO 2:
- // Create variable to store sensor reading
+// TODO 2: Create variable to store sensor reading
+int ldrReading = 0;
+
+// Define brightness threshold (adjust based on calibration)
+const int LIGHT_THRESHOLD = 500;
 
 void setup() {
 
