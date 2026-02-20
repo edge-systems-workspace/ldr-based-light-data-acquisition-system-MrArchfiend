@@ -33,11 +33,12 @@ void setup() {
 
 void loop() {
 
-    // TODO 5:
-    // Read analog value from LDR
+    // TODO 5: Read analog value from LDR
+    ldrReading = analogRead(LDR_PIN);
 
-    // TODO 6:
-    // Print raw ADC value
+    // TODO 6: Print raw ADC value
+    Serial.print("Raw ADC Value: ");
+    Serial.println(ldrReading);
 
     // TODO 7:
     // Apply threshold logic (Bright / Dark detection)
